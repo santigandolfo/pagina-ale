@@ -26,9 +26,10 @@ const Navigation = () => {
 
   const navItems = [
     { id: 'estudio', label: 'ESTUDIO', color: 'bg-mondrian-yellow', textColor: 'text-mondrian-black' },
-    { id: 'pelarium', label: 'PELARIUM', color: 'bg-mondrian-blue', textColor: 'text-mondrian-white' },
-    { id: 'cv', label: 'CV', color: 'bg-mondrian-red', textColor: 'text-mondrian-white' },
-    { id: 'turnos', label: 'TURNOS', color: 'bg-mondrian-white', textColor: 'text-mondrian-black' }
+    { id: 'celebridades', label: 'CELEBRIDADES', color: 'bg-mondrian-blue', textColor: 'text-mondrian-white' },
+    { id: 'pelarium', label: 'PELARIUM', color: 'bg-mondrian-red', textColor: 'text-mondrian-white' },
+    { id: 'cv', label: 'CV', color: 'bg-mondrian-white', textColor: 'text-mondrian-black' },
+    { id: 'turnos', label: 'TURNOS', color: 'bg-mondrian-red', textColor: 'text-mondrian-white' }
   ]
 
   return (
