@@ -1,31 +1,37 @@
-import React, { useState, useEffect } from 'react'
+'use client';
 
-const Hero = () => {
-  const [currentSlide, setCurrentSlide] = useState(0)
+import React, { useState, useEffect } from 'react';
+
+interface Image {
+  placeholder: string;
+}
+
+const Hero: React.FC = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
   
-  const images = [
+  const images: Image[] = [
     { placeholder: 'BEFORE/AFTER\nTRANSFORMATION 1' },
     { placeholder: 'STYLE CONSULTATION\nPROCESS' },
     { placeholder: 'WARDROBE\nEXAMPLES' },
     { placeholder: 'COLOR ANALYSIS\nSESSION' },
     { placeholder: 'PROFESSIONAL\nMAKEOVER' },
     { placeholder: 'PERSONAL STYLING\nRESULTS' }
-  ]
+  ];
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % images.length)
-    }, 3000)
-    return () => clearInterval(timer)
-  }, [images.length])
+      setCurrentSlide((prev) => (prev + 1) % images.length);
+    }, 3000);
+    return () => clearInterval(timer);
+  }, [images.length]);
 
   const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % images.length)
-  }
+    setCurrentSlide((prev) => (prev + 1) % images.length);
+  };
 
   const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + images.length) % images.length)
-  }
+    setCurrentSlide((prev) => (prev - 1 + images.length) % images.length);
+  };
 
   return (
     <section id="home" className="bg-mondrian-white min-h-screen flex items-center justify-center relative overflow-hidden border-b-8 border-mondrian-black pt-24">
@@ -162,7 +168,7 @@ const Hero = () => {
         <span className="text-mondrian-white text-2xl font-black">↓</span>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
