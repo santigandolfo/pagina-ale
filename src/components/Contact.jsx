@@ -22,7 +22,7 @@ const Contact = () => {
           </div>
         </div>
         
-        <div className="mondrian-grid grid-cols-1 md:grid-cols-2 gap-1 mb-12">
+        <div className="mondrian-grid grid-cols-1 lg:grid-cols-2 gap-1 mb-12">
           <div className="bg-mondrian-white border-4 border-mondrian-black p-8">
             <div className="flex items-center justify-center mb-6">
               <div className="bg-mondrian-blue p-4 mr-4">
@@ -94,6 +94,51 @@ const Contact = () => {
               >
                 Ver en Mapa
               </a>
+            </div>
+          </div>
+        </div>
+        
+        {/* Interactive Map Section */}
+        <div className="mondrian-grid grid-cols-1 gap-1 mb-12">
+          <div className="bg-mondrian-white border-8 border-mondrian-black p-8">
+            <h3 className="font-black text-3xl mb-8 text-mondrian-black uppercase text-center tracking-wider">
+              Ubicación
+            </h3>
+            <div className="bg-mondrian-black p-2">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9999999999995!2d-58.39019999999999!3d-34.603722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacb7a6e3f55%3A0x96eb3b17e5d3b717!2sAv.%20Corrientes%201719%2C%20C1042%20CABA%2C%20Argentina!5e0!3m2!1ses!2sus!4v1699999999999!5m2!1ses!2sus"
+                width="100%"
+                height="400"
+                style={{ border: '4px solid #000000' }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Ubicación Miguel Granado - Av. Corrientes 1719, Buenos Aires"
+                className="w-full"
+              ></iframe>
+            </div>
+            <div className="mondrian-grid grid-cols-1 md:grid-cols-3 gap-1 mt-4">
+              <div className="bg-mondrian-yellow p-4 text-center">
+                <p className="font-black text-mondrian-black">
+                  🚇 SUBTE
+                  <br />
+                  <span className="text-sm">Línea B - Callao</span>
+                </p>
+              </div>
+              <div className="bg-mondrian-blue p-4 text-center">
+                <p className="font-black text-mondrian-white">
+                  🚌 COLECTIVOS
+                  <br />
+                  <span className="text-sm">Múltiples líneas</span>
+                </p>
+              </div>
+              <div className="bg-mondrian-red p-4 text-center">
+                <p className="font-black text-mondrian-white">
+                  🚗 ACCESO
+                  <br />
+                  <span className="text-sm">Fácil llegada</span>
+                </p>
+              </div>
             </div>
           </div>
         </div>
