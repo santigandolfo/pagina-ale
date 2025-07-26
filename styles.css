@@ -433,6 +433,7 @@ img {
 /* Contact Section */
 .contact {
     padding: var(--section-padding);
+    padding-bottom: calc(var(--section-padding) + 2rem);
     background: var(--text-white);
 }
 
@@ -487,78 +488,7 @@ img {
 
 /* Form styles removed - no form present */
 
-/* Footer */
-.footer {
-    background: var(--secondary-color);
-    color: var(--text-white);
-    padding: 3rem 0 1rem;
-}
-
-.footer-content {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    gap: 3rem;
-    margin-bottom: 2rem;
-}
-
-.footer-section h3,
-.footer-section h4 {
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-}
-
-.footer-section p {
-    color: #cccccc;
-    margin-bottom: 1rem;
-}
-
-.footer-section ul {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.footer-section a {
-    color: #cccccc;
-    transition: var(--transition-fast);
-}
-
-.footer-section a:hover {
-    color: var(--primary-color);
-}
-
-.social-links {
-    display: flex;
-    gap: 1rem;
-    margin-top: 1rem;
-}
-
-.social-links a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    background: var(--primary-color);
-    border-radius: 50%;
-    transition: var(--transition-fast);
-}
-
-.social-links a:hover {
-    background: var(--primary-dark);
-    transform: translateY(-2px);
-}
-
-.footer-bottom {
-    border-top: 1px solid #444444;
-    padding-top: 2rem;
-    text-align: center;
-}
-
-.footer-bottom p {
-    color: #999999;
-    margin: 0;
-}
+/* Footer styles removed */
 
 /* Animations */
 @keyframes slideInLeft {
@@ -616,10 +546,7 @@ img {
         gap: 2rem;
     }
     
-    .footer-content {
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-    }
+    /* Footer styles removed */
 }
 
 @media (max-width: 768px) {
@@ -702,15 +629,7 @@ img {
         gap: 2rem;
     }
     
-    .footer-content {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-        text-align: center;
-    }
-    
-    .social-links {
-        justify-content: center;
-    }
+    /* Footer mobile styles removed */
 }
 
 @media (max-width: 480px) {
@@ -751,8 +670,7 @@ img {
 /* Print Styles */
 @media print {
     .navbar,
-    .hero-buttons,
-    .footer {
+    .hero-buttons {
         display: none;
     }
     

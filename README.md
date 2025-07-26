@@ -18,8 +18,7 @@ Un sitio web moderno y responsivo de una sola página para un negocio profesiona
 - **Hero Section**: Eye-catching introduction with call-to-action buttons
 - **About Section**: Professional background and services offered
 - **Portfolio Section**: Showcase of different hairstyles and transformations
-- **Contact Section**: Contact information and appointment booking form
-- **Footer**: Additional links and social media
+- **Contact Section**: Contact information and direct communication details
 
 ## 🛠️ Technologies Used
 
@@ -51,7 +50,6 @@ The website is built with a mobile-first approach and includes:
 
 2. **Nombre del Negocio**: Actualiza "Salón Elegancia" en todo el sitio:
    - Logo de navegación (línea 39)
-   - Footer (línea 250)
    - Meta tags (líneas 11, 17, 19)
 
 3. **Servicios**: Modifica la lista de servicios en la sección Sobre Mí (líneas 88-95)
