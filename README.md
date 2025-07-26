@@ -89,30 +89,38 @@ Reemplaza las imágenes placeholder con fotos reales:
 
 ## 🚀 Deployment to GitHub Pages
 
+### ✅ GitHub Pages Ready
+El sitio está **100% optimizado** para GitHub Pages con:
+- ✅ `.nojekyll` - Evita procesamiento Jekyll innecesario
+- ✅ `_config.yml` - Configuración optimizada para GitHub Pages
+- ✅ **Rutas relativas** - Funciona en cualquier subdirectorio
+- ✅ **Assets organizados** - Estructura profesional compatible
+
 ### Method 1: Direct Upload (Recommended)
 
 1. **Create a new repository on GitHub**:
    - Go to [github.com](https://github.com)
    - Click "New" repository
-   - Name it something like `hairdresser-website` or `salon-website`
-   - Make it public
+   - Name it something like `salon-website` or `peluqueria`
+   - Make it **public** (required for free GitHub Pages)
    - Don't initialize with README (we already have files)
 
 2. **Upload files**:
    - Click "uploading an existing file"
-   - Drag and drop all files (`index.html`, `styles.css`, `script.js`, `README.md`)
-   - Commit the files
+   - Drag and drop ALL files and folders from your project
+   - Commit the files with message: "Initial website deployment"
 
 3. **Enable GitHub Pages**:
-   - Go to repository Settings
-   - Scroll down to "Pages" section
-   - Under "Source", select "Deploy from a branch"
-   - Select "main" branch and "/ (root)" folder
-   - Click "Save"
+   - Go to repository **Settings**
+   - Scroll down to **"Pages"** section
+   - Under "Source", select **"Deploy from a branch"**
+   - Select **"main"** branch and **"/ (root)"** folder
+   - Click **"Save"**
 
 4. **Access your website**:
    - Your site will be available at: `https://yourusername.github.io/repository-name`
-   - It may take a few minutes to become available
+   - GitHub will show you the exact URL in the Pages settings
+   - It may take 2-10 minutes to become available
 
 ### Method 2: Git Command Line
 
@@ -137,6 +145,47 @@ git push -u origin main
 ```
 
 Then follow steps 3-4 from Method 1.
+
+### 🌐 Custom Domain (Optional)
+
+Si querés usar tu propio dominio (ej: `www.salonelegancia.com`):
+
+1. **Add CNAME file**:
+   ```bash
+   echo "www.salonelegancia.com" > CNAME
+   ```
+
+2. **Configure DNS** with your domain provider:
+   - Add a CNAME record pointing `www` to `yourusername.github.io`
+   - Or add A records pointing to GitHub Pages IPs
+
+3. **Enable in GitHub**:
+   - Go to repository Settings → Pages
+   - Add your custom domain
+   - Enable "Enforce HTTPS"
+
+### 🔧 Troubleshooting GitHub Pages
+
+**Common Issues:**
+
+1. **Site not loading**: 
+   - Check that `index.html` is in the root directory ✅
+   - Verify repository is public ✅
+   - Wait 10 minutes after enabling Pages
+
+2. **Images/CSS not loading**:
+   - Ensure all paths are relative (no `/` at start) ✅
+   - Check file names match exactly (case-sensitive)
+
+3. **Changes not appearing**:
+   - GitHub Pages updates can take 2-10 minutes
+   - Check the "Actions" tab for deployment status
+   - Clear browser cache (Ctrl+F5)
+
+**✅ Your Site is Optimized:**
+- All paths are relative and will work on GitHub Pages
+- File structure is professional and organized
+- No build process required - deploy and go!
 
 ## 📊 Performance Optimizations
 

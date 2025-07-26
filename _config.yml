@@ -1,0 +1,46 @@
+# GitHub Pages Configuration for Hairdresser Website
+title: "Salón Elegancia - Peluquero Profesional"
+description: "Servicios profesionales de peluquería con más de 15 años de experiencia en Argentina"
+author: "Peluquero Profesional"
+url: "" # Will be auto-filled by GitHub Pages
+baseurl: "" # Repository name (if not using username.github.io)
+
+# GitHub Pages specific settings
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - .gitignore
+  - .git/
+  - .nojekyll
+
+# Include files that start with underscore
+include:
+  - .nojekyll
+
+# Language and encoding
+lang: es-AR
+encoding: utf-8
+
+# Social media and SEO
+twitter:
+  username: salonelegancia
+  card: summary_large_image
+
+facebook:
+  app_id: ""
+
+logo: /assets/favicon.svg
+
+# Contact information for SEO
+contact:
+  phone: "+54 11 5555-4321"
+  email: "info@salonelegancia.com"
+  address: "Av. Corrientes 1234, Buenos Aires, CABA"
+
+# Site verification (add if needed)
+google_site_verification: ""
+bing_site_verification: "" 
