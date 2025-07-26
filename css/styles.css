@@ -317,6 +317,13 @@ img {
 .about {
     padding: var(--section-padding);
     background: var(--text-white);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.about .container {
+    width: 100%;
 }
 
 .about-content {
@@ -361,6 +368,13 @@ img {
 .portfolio {
     padding: var(--section-padding);
     background: var(--accent-color);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.portfolio .container {
+    width: 100%;
 }
 
 .portfolio-grid {
@@ -390,6 +404,12 @@ img {
     padding-bottom: calc(var(--section-padding) + 8rem);
     background: var(--text-white);
     min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.contact .container {
+    width: 100%;
 }
 
 .contact-content {
@@ -559,7 +579,15 @@ img {
     
     .hero {
         padding: 100px 0 60px;
-        min-height: auto;
+        min-height: 80vh;
+    }
+    
+    .about {
+        min-height: 80vh;
+    }
+    
+    .portfolio {
+        min-height: 80vh;
     }
     
     .hero-container {
