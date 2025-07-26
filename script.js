@@ -86,14 +86,14 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Basic validation
         if (!data.name || !data.email || !data.service) {
-            showNotification('Please fill in all required fields.', 'error');
+            showNotification('Por favor completá todos los campos requeridos.', 'error');
             return;
         }
         
         // Email validation
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(data.email)) {
-            showNotification('Please enter a valid email address.', 'error');
+            showNotification('Por favor ingresá una dirección de email válida.', 'error');
             return;
         }
         
@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const submitButton = e.target.querySelector('button[type="submit"]');
         const originalText = submitButton.textContent;
         
-        submitButton.textContent = 'Sending...';
+        submitButton.textContent = 'Enviando...';
         submitButton.disabled = true;
         
         // Simulate API call
@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', function() {
             submitButton.disabled = false;
             
             // Show success message
-            showNotification('Thank you! Your message has been sent successfully. We\'ll get back to you soon!', 'success');
+            showNotification('¡Gracias! Tu mensaje ha sido enviado exitosamente. ¡Te contactaremos pronto!', 'success');
             
             // Reset form
             e.target.reset();

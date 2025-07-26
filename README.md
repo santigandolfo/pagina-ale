@@ -1,6 +1,8 @@
-# Professional Hairdresser Website
+# Sitio Web Profesional de Peluquería
 
-A modern, responsive single-page website for a professional hairdressing business. Built with HTML5, CSS3, and vanilla JavaScript for optimal performance and SEO.
+Un sitio web moderno y responsivo de una sola página para un negocio profesional de peluquería. Construido con HTML5, CSS3 y JavaScript vanilla para un rendimiento y SEO óptimos. 
+
+**🇦🇷 Sitio en Español - Optimizado para Argentina**
 
 ## ✨ Features
 
@@ -38,23 +40,23 @@ The website is built with a mobile-first approach and includes:
 
 ## 🔧 Customization
 
-### Updating Content
+### Actualizando el Contenido
 
-1. **Business Information**: Edit the contact details in `index.html`:
-   - Phone number (line 201)
-   - Email address (line 207)
-   - Physical address (lines 213-214)
-   - Business hours (line 220)
-   - Social media links (lines 261-263)
+1. **Información del Negocio**: Edita los detalles de contacto en `index.html`:
+   - Número de teléfono (línea 201) - Actualmente: (011) 5555-4321
+   - Dirección de email (línea 207) - Actualmente: info@salonelegancia.com
+   - Dirección física (líneas 213-214) - Actualmente: Av. Corrientes 1234, Buenos Aires
+   - Horarios de atención (línea 220)
+   - Enlaces de redes sociales (líneas 261-263)
 
-2. **Business Name**: Update "Salon Excellence" throughout the site:
-   - Navigation logo (line 39)
-   - Footer (line 250)
-   - Meta tags (lines 11, 17, 19)
+2. **Nombre del Negocio**: Actualiza "Salón Elegancia" en todo el sitio:
+   - Logo de navegación (línea 39)
+   - Footer (línea 250)
+   - Meta tags (líneas 11, 17, 19)
 
-3. **Services**: Modify the services list in the About section (lines 88-95)
+3. **Servicios**: Modifica la lista de servicios en la sección Sobre Mí (líneas 88-95)
 
-4. **Portfolio**: Update portfolio items in the Portfolio section (lines 109-172)
+4. **Portafolio**: Actualiza los elementos del portafolio en la sección Portafolio (líneas 109-172)
 
 ### Styling
 
@@ -69,25 +71,23 @@ The website uses CSS custom properties (variables) for easy color customization:
 }
 ```
 
-### Adding Real Images
+### Agregando Imágenes Reales
 
-Replace the placeholder elements with actual images:
+Reemplaza las imágenes placeholder con fotos reales:
 
-1. Create an `images/` folder
-2. Add your photos (recommended: 800x600px for portfolio, 400x400px for about)
-3. Replace the `.image-placeholder` divs with `<img>` tags
+1. El directorio `images/` ya está creado con placeholders
+2. Reemplaza los archivos existentes con tus fotos (recomendado: 800x600px para portafolio, 400x400px para about)
+3. Los nombres de archivo actuales son:
+   - `hero-salon.jpg` - Imagen principal del salón
+   - `hairdresser-portrait.jpg` - Retrato del peluquero
+   - `bob-cut.jpg` - Corte bob clásico
+   - `blonde-highlights.svg` - Mechas rubias (SVG placeholder)
+   - `wedding-updo.jpg` - Recogido de novia
+   - `pixie-cut.jpg` - Corte pixie moderno
+   - `natural-curls.jpg` - Rizos naturales
+   - `color-transformation.svg` - Transformación de color (SVG placeholder)
 
-Example:
-```html
-<!-- Replace this -->
-<div class="image-placeholder">
-    <i class="fas fa-scissors"></i>
-    <p>Classic Bob Cut</p>
-</div>
-
-<!-- With this -->
-<img src="images/classic-bob.jpg" alt="Classic Bob Cut">
-```
+**Nota**: Algunas imágenes son SVG placeholders que puedes reemplazar con JPG/PNG reales.
 
 ## 🚀 Deployment to GitHub Pages
 
