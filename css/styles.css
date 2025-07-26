@@ -199,7 +199,7 @@ img {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     z-index: 1000;
-    padding: 1rem 0;
+    padding: 0.5rem 0;
     border-bottom: 1px solid var(--border-color);
     transition: var(--transition-medium);
 }
@@ -212,7 +212,7 @@ img {
 .nav-container {
     max-width: var(--container-max-width);
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0.25rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -233,10 +233,11 @@ img {
 
 .nav-subtitle {
     color: var(--text-light);
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     font-weight: 400;
-    margin-top: -0.2rem;
+    margin-top: 0.1rem;
     font-style: italic;
+    line-height: 1;
 }
 
 .nav-menu {
@@ -588,7 +589,7 @@ img {
     }
     
     .nav-container {
-        padding: 0 1.5rem;
+        padding: 0.25rem 1.5rem;
     }
     
     .contact {
