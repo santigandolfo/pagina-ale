@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');
     const navLinks = document.querySelectorAll('.nav-link');
-    // Contact form removed - no longer needed
+    // Simplified for navigation and animations only
     
     // Mobile Navigation Toggle
     function toggleMobileMenu() {
@@ -70,111 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Form submission handler removed - no form present
-    
-    // Show notification
-    function showNotification(message, type = 'info') {
-        // Remove existing notifications
-        const existingNotification = document.querySelector('.notification');
-        if (existingNotification) {
-            existingNotification.remove();
-        }
-        
-        // Create notification element
-        const notification = document.createElement('div');
-        notification.className = `notification notification-${type}`;
-        notification.innerHTML = `
-            <div class="notification-content">
-                <span class="notification-message">${message}</span>
-                <button class="notification-close">&times;</button>
-            </div>
-        `;
-        
-        // Add notification styles
-        notification.style.cssText = `
-            position: fixed;
-            top: 100px;
-            right: 20px;
-            max-width: 400px;
-            padding: 1rem 1.5rem;
-            border-radius: 10px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            z-index: 10000;
-            transform: translateX(100%);
-            transition: transform 0.3s ease;
-            font-family: var(--font-primary);
-        `;
-        
-        // Set colors based on type
-        switch (type) {
-            case 'success':
-                notification.style.background = '#d4edda';
-                notification.style.color = '#155724';
-                notification.style.border = '1px solid #c3e6cb';
-                break;
-            case 'error':
-                notification.style.background = '#f8d7da';
-                notification.style.color = '#721c24';
-                notification.style.border = '1px solid #f5c6cb';
-                break;
-            default:
-                notification.style.background = '#d1ecf1';
-                notification.style.color = '#0c5460';
-                notification.style.border = '1px solid #bee5eb';
-        }
-        
-        // Style notification content
-        const notificationContent = notification.querySelector('.notification-content');
-        notificationContent.style.cssText = `
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 1rem;
-        `;
-        
-        // Style close button
-        const closeButton = notification.querySelector('.notification-close');
-        closeButton.style.cssText = `
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            cursor: pointer;
-            color: inherit;
-            opacity: 0.7;
-            transition: opacity 0.2s ease;
-        `;
-        
-        closeButton.addEventListener('mouseenter', () => {
-            closeButton.style.opacity = '1';
-        });
-        closeButton.addEventListener('mouseleave', () => {
-            closeButton.style.opacity = '0.7';
-        });
-        
-        // Add to DOM
-        document.body.appendChild(notification);
-        
-        // Animate in
-        setTimeout(() => {
-            notification.style.transform = 'translateX(0)';
-        }, 100);
-        
-        // Close notification handlers
-        const closeNotification = () => {
-            notification.style.transform = 'translateX(100%)';
-            setTimeout(() => {
-                if (notification.parentNode) {
-                    notification.remove();
-                }
-            }, 300);
-        };
-        
-        closeButton.addEventListener('click', closeNotification);
-        
-        // Auto close after 5 seconds for success, 7 seconds for error
-        const autoCloseDelay = type === 'error' ? 7000 : 5000;
-        setTimeout(closeNotification, autoCloseDelay);
-    }
+    // Notification system removed - no longer needed without contact form
     
     // Animate elements on scroll
     function animateOnScroll() {
@@ -235,7 +131,7 @@ document.addEventListener('DOMContentLoaded', function() {
         animateOnScroll();
     });
     
-    // Form submission removed - no form present
+    // Core functionality: navigation, smooth scrolling, and scroll animations
     
     // Handle resize events
     window.addEventListener('resize', function() {
@@ -251,10 +147,7 @@ document.addEventListener('DOMContentLoaded', function() {
     updateActiveNavLink();
     animateOnScroll();
     
-    // Add loading class removal for better performance
-    window.addEventListener('load', function() {
-        document.body.classList.add('loaded');
-    });
+    // Loading optimization removed - not needed
     
     // Handle keyboard navigation
     document.addEventListener('keydown', function(e) {

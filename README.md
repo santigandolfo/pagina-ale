@@ -140,14 +140,15 @@ Then follow steps 3-4 from Method 1.
 
 ## 📊 Performance Optimizations
 
-The website is optimized for speed and SEO:
+El sitio web está optimizado para velocidad y SEO:
 
-- **Minimal JavaScript**: Only essential functionality
-- **Optimized CSS**: Efficient selectors and minimal unused styles
-- **Font Loading**: Preconnect to Google Fonts for faster loading
-- **Image Optimization**: Placeholder system that can be easily replaced
-- **Semantic HTML**: Proper heading structure and ARIA labels
-- **Mobile Performance**: Touch optimization and viewport meta tag
+- **JavaScript Mínimo**: Solo funcionalidad esencial (navegación y animaciones)
+- **CSS Optimizado**: Selectores eficientes sin estilos no utilizados
+- **Carga de Fuentes**: Preconexión a Google Fonts para carga más rápida
+- **Imágenes Optimizadas**: Sistema de imágenes reales bien comprimidas
+- **HTML Semántico**: Estructura de encabezados y etiquetas ARIA apropiadas
+- **Rendimiento Móvil**: Optimización táctil y meta viewport
+- **Código Limpio**: Eliminación de funcionalidades no utilizadas (formularios, notificaciones)
 
 ## 🔍 SEO Features
 

@@ -33,7 +33,6 @@
     /* Transitions */
     --transition-fast: 0.2s ease;
     --transition-medium: 0.3s ease;
-    --transition-slow: 0.5s ease;
 }
 
 /* Base Typography */
@@ -148,9 +147,7 @@ img {
     box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3);
 }
 
-.btn-full {
-    width: 100%;
-}
+/* .btn-full removed - not used */
 
 /* Section Headers */
 .section-header {
@@ -164,37 +161,7 @@ img {
     margin-top: 1rem;
 }
 
-/* Image Placeholders */
-.image-placeholder {
-    background: var(--gradient-bg);
-    border: 2px dashed var(--border-color);
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 3rem 2rem;
-    transition: var(--transition-medium);
-    height: 100%;
-}
-
-.image-placeholder:hover {
-    border-color: var(--primary-color);
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px var(--shadow-medium);
-}
-
-.image-placeholder i {
-    font-size: 3rem;
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-}
-
-.image-placeholder p {
-    color: var(--text-light);
-    font-weight: 500;
-    margin: 0;
-}
+/* Image placeholder styles removed - using real images */
 
 /* Image Styling */
 .hero-image img,
@@ -486,9 +453,7 @@ img {
     margin: 0;
 }
 
-/* Form styles removed - no form present */
-
-/* Footer styles removed */
+/* Contact form and footer styles removed for simplicity */
 
 /* Animations */
 @keyframes slideInLeft {
@@ -513,16 +478,7 @@ img {
     }
 }
 
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+/* fadeInUp animation removed - not used */
 
 /* Responsive Design */
 @media (max-width: 1024px) {
@@ -546,7 +502,7 @@ img {
         gap: 2rem;
     }
     
-    /* Footer styles removed */
+    /* Simplified layout for tablets */
 }
 
 @media (max-width: 768px) {
@@ -629,7 +585,7 @@ img {
         gap: 2rem;
     }
     
-    /* Footer mobile styles removed */
+    /* Mobile layout optimizations */
 }
 
 @media (max-width: 480px) {
@@ -649,7 +605,7 @@ img {
         grid-template-columns: 1fr;
     }
     
-    /* Contact form styles removed */
+    /* Small screen optimizations */
 }
 
 /* Accessibility */
@@ -684,9 +640,4 @@ img {
     }
 }
 
-/* High DPI Displays */
-@media (min-resolution: 192dpi) {
-    .image-placeholder {
-        border-width: 1px;
-    }
-} 
+/* High DPI styles removed - no longer needed */ 
