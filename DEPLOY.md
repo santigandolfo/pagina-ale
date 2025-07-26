@@ -21,22 +21,21 @@ Antes de subir a GitHub Pages, verificá que:
 5. **Esperar 5-10 minutos**
 6. **¡Listo!** Tu sitio estará en `yourusername.github.io/repository-name`
 
-## 📞 Info a Personalizar
+## 📞 Info Personalizada
 
-Antes del despliegue, recordá cambiar:
+El sitio ya está configurado con la información de Miguel Granado:
 
-- **Nombre del salón** en `index.html` (línea 39)
-- **Teléfono** en `index.html` (línea 201)
-- **Email** en `index.html` (línea 207)
-- **Dirección** en `index.html` (líneas 213-214)
-- **Horarios** en `index.html` (línea 220)
-- **Imágenes** en `assets/images/` con fotos reales
+- ✅ **Nombre profesional**: Miguel Granado
+- ✅ **Email de turnos**: turnos@granado.com.ar
+- ✅ **Dirección**: Av. Corrientes 1719 piso 6°, Buenos Aires
+- ✅ **Filosofía profesional**: Incluida en textos del sitio
+- 🔄 **Imágenes**: Reemplazar con fotos reales del estudio y trabajos
 
 ## 🌟 URLs de Ejemplo
 
-Después del despliegue, tu sitio será accesible en:
-- **GitHub Pages**: `https://tuusuario.github.io/nombre-repositorio`
-- **Con dominio propio**: `https://www.salonelegancia.com` (opcional)
+Después del despliegue, el sitio será accesible en:
+- **GitHub Pages**: `https://tuusuario.github.io/miguel-granado`
+- **Con dominio propio**: `https://www.granado.com.ar` (opcional)
 
 ---
 💡 **Tip**: Mantené este archivo para futuras actualizaciones del sitio. 

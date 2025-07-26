@@ -1,8 +1,8 @@
-# Sitio Web Profesional de Peluquería
+# Miguel Granado - Estilista e Imagen Personal
 
-Un sitio web moderno y responsivo de una sola página para un negocio profesional de peluquería. Construido con HTML5, CSS3 y JavaScript vanilla para un rendimiento y SEO óptimos. 
+Sitio web profesional para Miguel "Ale" Granado, estilista e imagen personal con sede en Buenos Aires. Combina su trayectoria teatral y artística con servicios de estilismo integral.
 
-**🇦🇷 Sitio en Español - Optimizado para Argentina**
+**🇦🇷 Buenos Aires - Av. Corrientes 1719 piso 6°**
 
 ## ✨ Features
 
@@ -41,16 +41,16 @@ The website is built with a mobile-first approach and includes:
 
 ### Actualizando el Contenido
 
-1. **Información del Negocio**: Edita los detalles de contacto en `index.html`:
-   - Número de teléfono (línea 201) - Actualmente: (011) 5555-4321
-   - Dirección de email (línea 207) - Actualmente: info@salonelegancia.com
-   - Dirección física (líneas 213-214) - Actualmente: Av. Corrientes 1234, Buenos Aires
-   - Horarios de atención (línea 220)
-   - Enlaces de redes sociales (líneas 261-263)
+1. **Información Personalizada**: El sitio ya está configurado con los datos de Miguel Granado:
+   - Email de turnos: turnos@granado.com.ar
+   - Dirección: Av. Corrientes 1719 piso 6°, Buenos Aires, CABA
+   - Filosofía personal sobre imagen y personalidad
+   - Servicios especializados: Estudio, Pelarium, Celebridades
 
-2. **Nombre del Negocio**: Actualiza "Salón Elegancia" en todo el sitio:
-   - Logo de navegación (línea 39)
-   - Meta tags (líneas 11, 17, 19)
+2. **Personalización Adicional**: Si necesitás cambiar algo:
+   - Nombre/marca personal en navegación
+   - Agregar número de teléfono si lo desea
+   - Actualizar enlaces de redes sociales
 
 3. **Servicios**: Modifica la lista de servicios en la sección Sobre Mí (líneas 88-95)
 
