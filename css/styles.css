@@ -26,8 +26,8 @@
     
     /* Spacing */
     --container-max-width: 1200px;
-    --section-padding: 80px 0;
-    --section-padding-mobile: 60px 0;
+    --section-padding: 20px 0 80px 0;
+    --section-padding-mobile: 15px 0 60px 0;
     
     /* Transitions */
     --transition-fast: 0.2s ease;
@@ -488,7 +488,7 @@ img {
 /* Contact Section */
 .contact {
     padding: var(--section-padding);
-    padding-bottom: calc(var(--section-padding) + 8rem);
+    padding-bottom: calc(80px + 4rem);
     background: var(--text-white);
     min-height: 100vh;
     display: flex;
@@ -498,7 +498,6 @@ img {
 
 .contact .container {
     width: 100%;
-    padding-top: 4rem;
 }
 
 .contact-content {
@@ -618,7 +617,7 @@ img {
 /* Responsive Design */
 @media (max-width: 1024px) {
     :root {
-        --section-padding: 60px 0;
+        --section-padding: 18px 0 70px 0;
     }
     
     .hero-container,
@@ -655,7 +654,7 @@ img {
     
     .contact {
         min-height: 80vh;
-        padding-bottom: calc(var(--section-padding) + 6rem);
+        padding-bottom: calc(60px + 3rem);
     }
     
     .nav-menu {

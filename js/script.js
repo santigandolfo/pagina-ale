@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function smoothScrollTo(targetId) {
         const targetElement = document.querySelector(targetId);
         if (targetElement) {
-            const offsetTop = targetElement.offsetTop - 80; // Account for fixed navbar
+            const offsetTop = targetElement.offsetTop - 70; // Account for fixed navbar with two-line logo
             window.scrollTo({
                 top: offsetTop,
                 behavior: 'smooth'
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Update active nav link based on scroll position
     function updateActiveNavLink() {
         const sections = document.querySelectorAll('section[id]');
-        const scrollPosition = window.scrollY + 100;
+        const scrollPosition = window.scrollY + 90;
         
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
