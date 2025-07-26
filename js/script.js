@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Notification system removed - no longer needed without contact form
+
     
     // Animate elements on scroll
     function animateOnScroll() {
@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', function() {
     updateActiveNavLink();
     animateOnScroll();
     
-    // Loading optimization removed - not needed
+
     
     // Handle keyboard navigation
     document.addEventListener('keydown', function(e) {

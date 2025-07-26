@@ -11,7 +11,6 @@
     /* Color Palette */
     --primary-color: #d4af37;
     --primary-dark: #b8941f;
-    --secondary-color: #2c2c2c;
     --accent-color: #f8f5f0;
     --text-dark: #333333;
     --text-light: #666666;
@@ -147,7 +146,7 @@ img {
     box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3);
 }
 
-/* .btn-full removed - not used */
+
 
 /* Section Headers */
 .section-header {
@@ -161,7 +160,7 @@ img {
     margin-top: 1rem;
 }
 
-/* Image placeholder styles removed - using real images */
+
 
 /* Image Styling */
 .hero-image img,
@@ -453,7 +452,7 @@ img {
     margin: 0;
 }
 
-/* Contact form and footer styles removed for simplicity */
+
 
 /* Animations */
 @keyframes slideInLeft {
@@ -478,7 +477,7 @@ img {
     }
 }
 
-/* fadeInUp animation removed - not used */
+
 
 /* Responsive Design */
 @media (max-width: 1024px) {
@@ -640,4 +639,4 @@ img {
     }
 }
 
-/* High DPI styles removed - no longer needed */ 
+ 

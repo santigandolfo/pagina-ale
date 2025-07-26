@@ -75,7 +75,7 @@ Reemplaza las imágenes placeholder con fotos reales:
 
 1. El directorio `images/` ya está creado con placeholders
 2. Reemplaza los archivos existentes con tus fotos (recomendado: 800x600px para portafolio, 400x400px para about)
-3. Los nombres de archivo actuales son:
+3. Los nombres de archivo actuales son (en `assets/images/`):
    - `hero-salon.jpg` - Imagen principal del salón
    - `hairdresser-portrait.jpg` - Retrato del peluquero
    - `bob-cut.jpg` - Corte bob clásico
@@ -171,10 +171,33 @@ La sección de contacto incluye:
 
 ## 🎨 Favicon
 
-El sitio incluye un favicon profesional con temática de peluquería:
+El sitio incluye un favicon profesional con temática de peluquería (en `assets/`):
 - `favicon.svg` - Versión vectorial con tijeras doradas
 - `favicon-32x32.png` - Versión PNG de 32x32px  
 - `favicon.ico` - Versión ICO para compatibilidad antigua
+
+## 📁 Estructura de Archivos
+
+El proyecto está organizado de manera profesional:
+
+```
+pagina-ale/
+├── index.html          # Página principal
+├── css/
+│   └── styles.css      # Estilos principales
+├── js/
+│   └── script.js       # JavaScript principal
+├── assets/
+│   ├── favicon.svg     # Iconos del sitio
+│   ├── favicon-32x32.png
+│   ├── favicon.ico
+│   └── images/         # Todas las imágenes
+│       ├── hero-salon.jpg
+│       ├── hairdresser-portrait.jpg
+│       └── [portfolio images...]
+├── README.md           # Documentación
+└── .gitignore         # Archivos ignorados por Git
+```
 
 ## 🆘 Support
 
