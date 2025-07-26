@@ -155,6 +155,15 @@ document.addEventListener('DOMContentLoaded', function() {
         if (e.key === 'Escape' && navMenu.classList.contains('active')) {
             closeMobileMenu();
         }
+        
+        // Carousel navigation with arrow keys (if carousel exists)
+        if (carousel) {
+            if (e.key === 'ArrowLeft') {
+                prevSlide();
+            } else if (e.key === 'ArrowRight') {
+                nextSlide();
+            }
+        }
     });
     
     // Portfolio Carousel Functionality
@@ -220,14 +229,7 @@ document.addEventListener('DOMContentLoaded', function() {
             autoPlayInterval = setInterval(nextSlide, 5000);
         });
         
-        // Keyboard navigation for carousel
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'ArrowLeft') {
-                prevSlide();
-            } else if (e.key === 'ArrowRight') {
-                nextSlide();
-            }
-        });
+
         
         // Touch/swipe support
         let startX = 0;
