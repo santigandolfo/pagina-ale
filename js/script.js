@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Animate elements on scroll
     function animateOnScroll() {
-        const animatedElements = document.querySelectorAll('.portfolio-item, .contact-item');
+        const animatedElements = document.querySelectorAll('.contact-item');
         
         animatedElements.forEach(element => {
             const elementTop = element.getBoundingClientRect().top;
@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initialize animated elements
     function initializeAnimatedElements() {
-        const animatedElements = document.querySelectorAll('.portfolio-item, .contact-item');
+        const animatedElements = document.querySelectorAll('.contact-item');
         
         animatedElements.forEach(element => {
             element.style.opacity = '0';
@@ -156,6 +156,105 @@ document.addEventListener('DOMContentLoaded', function() {
             closeMobileMenu();
         }
     });
+    
+    // Portfolio Carousel Functionality
+    const carousel = document.querySelector('.portfolio-carousel');
+    if (carousel) {
+        const track = carousel.querySelector('.carousel-track');
+        const slides = carousel.querySelectorAll('.carousel-slide');
+        const prevBtn = carousel.querySelector('.carousel-btn-prev');
+        const nextBtn = carousel.querySelector('.carousel-btn-next');
+        const indicators = carousel.querySelectorAll('.indicator');
+        
+        let currentSlide = 0;
+        const totalSlides = slides.length;
+        
+        // Update carousel position
+        function updateCarousel() {
+            const translateX = -currentSlide * 100;
+            track.style.transform = `translateX(${translateX}%)`;
+            
+            // Update indicators
+            indicators.forEach((indicator, index) => {
+                indicator.classList.toggle('active', index === currentSlide);
+            });
+        }
+        
+        // Next slide
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            updateCarousel();
+        }
+        
+        // Previous slide
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            updateCarousel();
+        }
+        
+        // Go to specific slide
+        function goToSlide(slideIndex) {
+            currentSlide = slideIndex;
+            updateCarousel();
+        }
+        
+        // Event listeners
+        if (nextBtn) nextBtn.addEventListener('click', nextSlide);
+        if (prevBtn) prevBtn.addEventListener('click', prevSlide);
+        
+        // Indicator clicks
+        indicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', () => goToSlide(index));
+        });
+        
+        // Auto-play carousel (optional)
+        let autoPlayInterval = setInterval(nextSlide, 5000);
+        
+        // Pause auto-play on hover
+        carousel.addEventListener('mouseenter', () => {
+            clearInterval(autoPlayInterval);
+        });
+        
+        // Resume auto-play on mouse leave
+        carousel.addEventListener('mouseleave', () => {
+            autoPlayInterval = setInterval(nextSlide, 5000);
+        });
+        
+        // Keyboard navigation for carousel
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft') {
+                prevSlide();
+            } else if (e.key === 'ArrowRight') {
+                nextSlide();
+            }
+        });
+        
+        // Touch/swipe support
+        let startX = 0;
+        let endX = 0;
+        
+        carousel.addEventListener('touchstart', function(e) {
+            startX = e.touches[0].clientX;
+        });
+        
+        carousel.addEventListener('touchend', function(e) {
+            endX = e.changedTouches[0].clientX;
+            handleSwipe();
+        });
+        
+        function handleSwipe() {
+            const threshold = 50;
+            const diff = startX - endX;
+            
+            if (Math.abs(diff) > threshold) {
+                if (diff > 0) {
+                    nextSlide();
+                } else {
+                    prevSlide();
+                }
+            }
+        }
+    }
     
     // Prevent zoom on iOS double tap
     let lastTouchEnd = 0;
