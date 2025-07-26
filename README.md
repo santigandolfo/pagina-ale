@@ -1,130 +1,206 @@
-# Miguel Granado - Estudio de Imagen y Personalidad
+# Professional Hairdresser Website
 
-[![Deploy to GitHub Pages](https://github.com/username/pagina-ale/workflows/Deploy%20to%20GitHub%20Pages/badge.svg)](https://github.com/username/pagina-ale/actions)
+A modern, responsive single-page website for a professional hairdressing business. Built with HTML5, CSS3, and vanilla JavaScript for optimal performance and SEO.
 
-Un sitio web moderno y elegante para el estudio de imagen y personalidad de Miguel Granado, desarrollado con React y Vite.
+## ✨ Features
 
-## 🌟 Características
+- **Responsive Design**: Optimized for all devices (desktop, tablet, mobile)
+- **SEO Optimized**: Proper meta tags, structured data, and semantic HTML
+- **Fast Loading**: Minimal dependencies, optimized assets
+- **Professional Design**: Modern UI with elegant animations
+- **Interactive Elements**: Smooth scrolling, mobile navigation, form validation
+- **GitHub Pages Ready**: Zero configuration deployment
 
-- **Diseño Moderno**: Interfaz elegante y profesional con animaciones suaves
-- **Responsive**: Totalmente adaptable a dispositivos móviles y tablets
-- **Rendimiento Optimizado**: Construido con Vite para carga rápida
-- **SEO Friendly**: Optimizado para motores de búsqueda
-- **Despliegue Automático**: Configurado para GitHub Pages con GitHub Actions
+## 🚀 Sections
 
-## 🚀 Secciones
+- **Hero Section**: Eye-catching introduction with call-to-action buttons
+- **About Section**: Professional background and services offered
+- **Portfolio Section**: Showcase of different hairstyles and transformations
+- **Contact Section**: Contact information and appointment booking form
+- **Footer**: Additional links and social media
 
-- **Hero**: Presentación principal con filosofía del estudio
-- **Estudio**: Información sobre la filosofía y servicios
-- **Pelarium**: Concepto único que fusiona teatro e imagen
-- **CV**: Formación académica y experiencia profesional completa
-- **Contacto**: Información de turnos y ubicación
+## 🛠️ Technologies Used
 
-## 🛠️ Tecnologías
+- **HTML5**: Semantic structure with accessibility features
+- **CSS3**: Modern styling with CSS Grid, Flexbox, and animations
+- **JavaScript**: Interactive features and form handling
+- **Font Awesome**: Professional icons
+- **Google Fonts**: Typography (Inter + Playfair Display)
 
-- **React 18**: Framework principal
-- **Vite**: Build tool para desarrollo rápido
-- **Tailwind CSS**: Framework de utilidades CSS para diseño moderno
-- **Google Fonts**: Tipografías Playfair Display e Inter
-- **GitHub Pages**: Hosting gratuito
-- **GitHub Actions**: CI/CD automático
+## 📱 Responsive Design
 
-## 📦 Instalación y Desarrollo
+The website is built with a mobile-first approach and includes:
+- Responsive navigation with hamburger menu
+- Flexible grid layouts that adapt to screen size
+- Optimized typography scaling
+- Touch-friendly interactive elements
+- Fast loading on all devices
 
-### Prerrequisitos
-- Node.js 18 o superior
-- npm o yarn
+## 🔧 Customization
 
-### Comandos
+### Updating Content
 
-```bash
-# Instalar dependencias
-npm install
+1. **Business Information**: Edit the contact details in `index.html`:
+   - Phone number (line 201)
+   - Email address (line 207)
+   - Physical address (lines 213-214)
+   - Business hours (line 220)
+   - Social media links (lines 261-263)
 
-# Iniciar servidor de desarrollo
-npm run dev
+2. **Business Name**: Update "Salon Excellence" throughout the site:
+   - Navigation logo (line 39)
+   - Footer (line 250)
+   - Meta tags (lines 11, 17, 19)
 
-# Construir para producción
-npm run build
+3. **Services**: Modify the services list in the About section (lines 88-95)
 
-# Vista previa de la build
-npm run preview
+4. **Portfolio**: Update portfolio items in the Portfolio section (lines 109-172)
 
-# Desplegar a GitHub Pages
-npm run deploy
-```
+### Styling
 
-## 🚀 Despliegue
+The website uses CSS custom properties (variables) for easy color customization:
 
-### GitHub Pages
-
-1. **Fork del repositorio** o clona en tu cuenta de GitHub
-2. **Actualiza la configuración**:
-   - En `package.json`: cambia `YOUR_USERNAME` en `homepage` por tu usuario de GitHub
-   - En `vite.config.js`: actualiza el `base` con el nombre de tu repositorio
-3. **Habilita GitHub Pages** en la configuración del repositorio
-4. **Push al branch main** - el despliegue es automático
-
-### Configuración Manual
-
-Si prefieres desplegar manualmente:
-
-```bash
-npm run build
-npm run deploy
-```
-
-## 📁 Estructura del Proyecto
-
-```
-src/
-├── components/
-│   ├── Navigation.jsx      # Navegación principal
-│   ├── Hero.jsx           # Sección hero
-│   ├── Studio.jsx         # Estudio y Pelarium
-│   ├── CV.jsx             # Currículum vitae
-│   ├── Contact.jsx        # Contacto y turnos
-│   └── Footer.jsx         # Pie de página
-├── App.jsx                # Componente principal
-├── App.css               # Estilos específicos
-├── index.css             # Estilos globales
-└── main.jsx              # Punto de entrada
-```
-
-## 🎨 Personalización
-
-### Colores
-Los colores principales se definen en `tailwind.config.js`:
-
-```javascript
-colors: {
-  primary: '#1a1a1a',
-  accent: '#d4af37',
-  'bg-light': '#fafafa',
-  // ... más colores personalizados
+```css
+:root {
+    --primary-color: #d4af37;      /* Gold accent color */
+    --primary-dark: #b8941f;       /* Darker gold for hover states */
+    --secondary-color: #2c2c2c;    /* Dark background color */
+    --accent-color: #f8f5f0;       /* Light cream background */
 }
 ```
 
-### Contenido
-- **Textos**: Edita los componentes en `src/components/`
-- **Información personal**: Actualiza los datos en `CV.jsx` y `Contact.jsx`
-- **SEO**: Modifica `index.html` para el título y descripción
+### Adding Real Images
 
-### Estilos
-- **Tailwind CSS**: Clases de utilidad para styling moderno
-- **Componentes**: Clases Tailwind directas en JSX
-- **Responsive**: Breakpoints de Tailwind (sm, md, lg, xl)
+Replace the placeholder elements with actual images:
 
-## 📞 Contacto
+1. Create an `images/` folder
+2. Add your photos (recommended: 800x600px for portfolio, 400x400px for about)
+3. Replace the `.image-placeholder` divs with `<img>` tags
 
-**Miguel Granado**
-- Email: turnos@granado.com.ar
-- Dirección: Av. Corrientes 1719, Piso 6°, Buenos Aires
+Example:
+```html
+<!-- Replace this -->
+<div class="image-placeholder">
+    <i class="fas fa-scissors"></i>
+    <p>Classic Bob Cut</p>
+</div>
 
-## 📄 Licencia
+<!-- With this -->
+<img src="images/classic-bob.jpg" alt="Classic Bob Cut">
+```
 
-Este proyecto está desarrollado como sitio web personal. Todos los derechos reservados.
+## 🚀 Deployment to GitHub Pages
+
+### Method 1: Direct Upload (Recommended)
+
+1. **Create a new repository on GitHub**:
+   - Go to [github.com](https://github.com)
+   - Click "New" repository
+   - Name it something like `hairdresser-website` or `salon-website`
+   - Make it public
+   - Don't initialize with README (we already have files)
+
+2. **Upload files**:
+   - Click "uploading an existing file"
+   - Drag and drop all files (`index.html`, `styles.css`, `script.js`, `README.md`)
+   - Commit the files
+
+3. **Enable GitHub Pages**:
+   - Go to repository Settings
+   - Scroll down to "Pages" section
+   - Under "Source", select "Deploy from a branch"
+   - Select "main" branch and "/ (root)" folder
+   - Click "Save"
+
+4. **Access your website**:
+   - Your site will be available at: `https://yourusername.github.io/repository-name`
+   - It may take a few minutes to become available
+
+### Method 2: Git Command Line
+
+If you have Git installed:
+
+```bash
+# Initialize git repository
+git init
+
+# Add all files
+git add .
+
+# Commit files
+git commit -m "Initial website setup"
+
+# Add remote repository (replace with your repository URL)
+git remote add origin https://github.com/yourusername/repository-name.git
+
+# Push to GitHub
+git branch -M main
+git push -u origin main
+```
+
+Then follow steps 3-4 from Method 1.
+
+## 📊 Performance Optimizations
+
+The website is optimized for speed and SEO:
+
+- **Minimal JavaScript**: Only essential functionality
+- **Optimized CSS**: Efficient selectors and minimal unused styles
+- **Font Loading**: Preconnect to Google Fonts for faster loading
+- **Image Optimization**: Placeholder system that can be easily replaced
+- **Semantic HTML**: Proper heading structure and ARIA labels
+- **Mobile Performance**: Touch optimization and viewport meta tag
+
+## 🔍 SEO Features
+
+- Meta description and keywords
+- Open Graph tags for social sharing
+- Twitter Card support
+- Semantic HTML structure
+- Proper heading hierarchy (H1, H2, H3, etc.)
+- Alt text for images (when you add real images)
+- Fast loading times
+- Mobile-friendly design
+
+## 📞 Form Handling
+
+The contact form currently includes:
+- Client-side validation
+- Visual feedback for user interactions
+- Simulated submission (shows success message)
+
+To make the form functional, you'll need to:
+1. Set up a form handling service (like Formspree, Netlify Forms, or EmailJS)
+2. Update the form action and method in `index.html`
+3. Modify the JavaScript in `script.js` to handle real submissions
+
+### Popular Form Services:
+
+- **Formspree**: https://formspree.io (free tier available)
+- **EmailJS**: https://emailjs.com (free tier available)
+- **Netlify Forms**: https://netlify.com (if deployed on Netlify)
+
+## 🆘 Support
+
+If you need help customizing the website:
+
+1. Check this README for common customizations
+2. View the code comments for guidance
+3. Test changes locally by opening `index.html` in your browser
+4. Use browser developer tools (F12) to debug any issues
+
+## 📄 License
+
+This website template is free to use for personal and commercial projects. No attribution required, but appreciated!
+
+## 🔄 Updates
+
+To update the website after initial deployment:
+1. Make changes to the files locally
+2. Test by opening `index.html` in your browser
+3. Upload the changed files to GitHub (or use git commands)
+4. Changes will automatically appear on your GitHub Pages site
 
 ---
 
-Desarrollado con ❤️ usando React y Vite 
+**Built with ❤️ for professional hairdressers** 
