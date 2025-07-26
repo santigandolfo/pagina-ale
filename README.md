@@ -162,23 +162,20 @@ The website is optimized for speed and SEO:
 - Fast loading times
 - Mobile-friendly design
 
-## 📞 Form Handling
+## 📞 Información de Contacto
 
-The contact form currently includes:
-- Client-side validation
-- Visual feedback for user interactions
-- Simulated submission (shows success message)
+La sección de contacto incluye:
+- Información de teléfono, email y dirección
+- Horarios de atención
+- Diseño centrado y responsivo
+- **Nota**: El formulario de contacto fue removido para simplicidad - los clientes pueden contactar directamente por teléfono o email
 
-To make the form functional, you'll need to:
-1. Set up a form handling service (like Formspree, Netlify Forms, or EmailJS)
-2. Update the form action and method in `index.html`
-3. Modify the JavaScript in `script.js` to handle real submissions
+## 🎨 Favicon
 
-### Popular Form Services:
-
-- **Formspree**: https://formspree.io (free tier available)
-- **EmailJS**: https://emailjs.com (free tier available)
-- **Netlify Forms**: https://netlify.com (if deployed on Netlify)
+El sitio incluye un favicon profesional con temática de peluquería:
+- `favicon.svg` - Versión vectorial con tijeras doradas
+- `favicon-32x32.png` - Versión PNG de 32x32px  
+- `favicon.ico` - Versión ICO para compatibilidad antigua
 
 ## 🆘 Support
 

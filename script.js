@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');
     const navLinks = document.querySelectorAll('.nav-link');
-    const contactForm = document.querySelector('.contact-form form');
+    // Contact form removed - no longer needed
     
     // Mobile Navigation Toggle
     function toggleMobileMenu() {
@@ -70,52 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Form submission handler
-    function handleFormSubmission(e) {
-        e.preventDefault();
-        
-        // Get form data
-        const formData = new FormData(e.target);
-        const data = {
-            name: formData.get('name'),
-            email: formData.get('email'),
-            phone: formData.get('phone'),
-            service: formData.get('service'),
-            message: formData.get('message')
-        };
-        
-        // Basic validation
-        if (!data.name || !data.email || !data.service) {
-            showNotification('Por favor completá todos los campos requeridos.', 'error');
-            return;
-        }
-        
-        // Email validation
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(data.email)) {
-            showNotification('Por favor ingresá una dirección de email válida.', 'error');
-            return;
-        }
-        
-        // Simulate form submission (replace with actual form handling)
-        const submitButton = e.target.querySelector('button[type="submit"]');
-        const originalText = submitButton.textContent;
-        
-        submitButton.textContent = 'Enviando...';
-        submitButton.disabled = true;
-        
-        // Simulate API call
-        setTimeout(() => {
-            submitButton.textContent = originalText;
-            submitButton.disabled = false;
-            
-            // Show success message
-            showNotification('¡Gracias! Tu mensaje ha sido enviado exitosamente. ¡Te contactaremos pronto!', 'success');
-            
-            // Reset form
-            e.target.reset();
-        }, 2000);
-    }
+    // Form submission handler removed - no form present
     
     // Show notification
     function showNotification(message, type = 'info') {
@@ -280,10 +235,7 @@ document.addEventListener('DOMContentLoaded', function() {
         animateOnScroll();
     });
     
-    // Form submission
-    if (contactForm) {
-        contactForm.addEventListener('submit', handleFormSubmission);
-    }
+    // Form submission removed - no form present
     
     // Handle resize events
     window.addEventListener('resize', function() {

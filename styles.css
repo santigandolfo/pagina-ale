@@ -442,10 +442,24 @@ img {
     gap: 4rem;
 }
 
+.contact-content-centered {
+    display: flex;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 .contact-info {
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
+}
+
+.contact-content-centered .contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    width: 100%;
 }
 
 .contact-item {
@@ -471,41 +485,7 @@ img {
     margin: 0;
 }
 
-.contact-form {
-    background: var(--accent-color);
-    padding: 3rem;
-    border-radius: 20px;
-}
-
-.form-group {
-    margin-bottom: 1.5rem;
-}
-
-.form-group input,
-.form-group select,
-.form-group textarea {
-    width: 100%;
-    padding: 1rem 1.5rem;
-    border: 2px solid var(--border-color);
-    border-radius: 10px;
-    font-family: var(--font-primary);
-    font-size: 1rem;
-    transition: var(--transition-fast);
-    background: var(--text-white);
-}
-
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
-}
-
-.form-group textarea {
-    resize: vertical;
-    min-height: 120px;
-}
+/* Form styles removed - no form present */
 
 /* Footer */
 .footer {
@@ -622,7 +602,7 @@ img {
     
     .hero-container,
     .about-content,
-    .contact-content {
+    .contact-content:not(.contact-content-centered) {
         grid-template-columns: 1fr;
         gap: 3rem;
     }
@@ -717,8 +697,9 @@ img {
         gap: 1.5rem;
     }
     
-    .contact-form {
-        padding: 2rem;
+    .contact-content-centered .contact-info {
+        grid-template-columns: 1fr;
+        gap: 2rem;
     }
     
     .footer-content {
@@ -749,9 +730,7 @@ img {
         grid-template-columns: 1fr;
     }
     
-    .contact-form {
-        padding: 1.5rem;
-    }
+    /* Contact form styles removed */
 }
 
 /* Accessibility */
@@ -773,7 +752,6 @@ img {
 @media print {
     .navbar,
     .hero-buttons,
-    .contact-form,
     .footer {
         display: none;
     }
